@@ -16,8 +16,8 @@ def linebot():
     body = request.get_data(as_text=True)                    # 取得收到的訊息內容
     try:
         json_data = json.loads(body)                         # json 格式化訊息內容
-        access_token = 'CstKxKrn5r+jtfhe3O7U10eUBHWBcPjyCG2mTLw0ef01aA/LT5pv2lcBa5OGHn8vhrXAlFz/4+WmNwmr/q1QsYh94f+IxmZFmUbPRV6ZGCiXdmZUIcmvCgi0rsBDc7MEGy9ckU2q0M7W8a0RS90MAgdB04t89/1O/w1cDnyilFU='
-        secret = 'c9f77c41314d487cf78b5aa167368c7a'
+        access_token = '*****'
+        secret = '*****'
         line_bot_api = LineBotApi(access_token)              # 確認 token 是否正確
         handler = WebhookHandler(secret)                     # 確認 secret 是否正確
         signature = request.headers['X-Line-Signature']      # 加入回傳的 headers
